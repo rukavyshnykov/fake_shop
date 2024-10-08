@@ -6,7 +6,7 @@ export const useProducts = () => {
     const [sort, setSort] = useState<SortType>('asc')
     const {data: products} = useGetProductsQuery() 
     const filteredProducts = useMemo(() => {
-        return products?.filter(p => p.title.toLowerCase().includes(filter))
+        return products?.filter(p => p.category.toLowerCase().includes(filter))
     }, [filter, products])
     const filteredSortedProducts = useMemo(() => {
         return filteredProducts?.sort((a, b) => sort === 'asc' ? Number(a.price) - Number(b.price) : Number(b.price) - Number(a.price))
