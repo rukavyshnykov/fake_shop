@@ -4,7 +4,7 @@ import { Layout } from "./components/Layout/Layout";
 import { Products } from "./pages/Products/Products";
 import { Cart } from "./pages/Cart/Cart";
 
-export const router = createBrowserRouter([
+const router = createBrowserRouter([
     {
         element: <Layout />,
         children: [
