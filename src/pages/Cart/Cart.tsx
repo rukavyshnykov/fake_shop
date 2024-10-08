@@ -1,7 +1,13 @@
+import { useSelector } from "react-redux"
+import { cartSelector } from "../../selectors"
+import { CartList } from "../../components/CartList/CartList"
+
 export const Cart = () => {
+    const cart = useSelector(cartSelector)
+
     return (
         <section>
-            WOW
+            <CartList list={cart}/>
         </section>
     )
 }
