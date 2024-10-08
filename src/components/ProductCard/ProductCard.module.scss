@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  width: calc(25% - 15px);
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+
+  button {
+    margin-top: auto;
+  }
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0;
+}
